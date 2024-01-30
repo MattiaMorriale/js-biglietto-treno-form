@@ -22,33 +22,123 @@ body{
 
 .card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    justify-content: space-around;
+    flex-wrap: wrap;
+
+    justify-content: center;
 
     background-color: #00000074;
 
     height: 300px;
 
-    width: 600px;
+    width: 1200px;
 
     border-radius: 25px;
 
     padding: 15px;
 }
 
+.card:nth-of-type(1){
+    margin-bottom: 20px;
+
+    height: 180px;
+}
+
 .row{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     flex-direction: column;
+}
+
+.card:nth-of-type(2) h1{
+    padding-top: 20px;
+    color: white;
+
+    margin: 0;
+}
+
+.card:nth-of-type(2) .row{
+    width: 100%;
+
+    align-items: end;
+
+    flex-direction: row;
+
+    background-color: rgb(128, 92, 0);
+
+    border-radius: 25px;
+}
+
+.card:nth-of-type(2) .row .cont-name{
+    width: 300px;
+    height: 100%;
+
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding-top: 20px;
+
+    background-color: rgb(166, 166, 166);
+}
+
+.cont-name #namek{
+    font-size: 20px;
+}
+
+.card:nth-of-type(2) .row .cont-tar{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-grow: 1;
+    height: 100%;
+    padding-top: 20px;
+
+    color: black;
+}
+
+.inp{
+    width: 33%;
+}
+
+#button{
+    padding: 8px 15px;
+
+    border-radius: 25px;
+    border: 0;
+}
+
+#km, #age, #name{
+    text-align: center;
+    padding: 8px;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .text{
     font-size: large;
 
     color: white;
+
+    margin-bottom: 20px;
 }
 
 .back{
@@ -63,6 +153,6 @@ body{
     border-radius: 25px;
     padding: 0 10px;
 
-    width: 400px;
+    width: 150px;
     height: 30px;
 }

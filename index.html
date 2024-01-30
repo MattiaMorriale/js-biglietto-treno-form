@@ -14,34 +14,64 @@
     <div class="container">
 
         <div class="card">
-            <div class="row">
+            <div class="row inp">
                 <strong class="text">
-                    Chilometri:
+                    Come ti chiami?
                 </strong>
-                <input type="number" id="km">
-                <strong class="text back" id="kmk">
-                    
-                </strong>                  
+                <input type="text" id="name">                  
             </div>
-        
-            <div class="row">
+
+            <div class="row inp">
                 <strong class="text">
-                    Anni:
+                    Quanti anni hai?
                 </strong>
                 <input type="number" id="age">
-                <strong class="text back" id="age">
-                    
+            </div>
+
+            <div class="row inp">
+                <strong class="text">
+                    Quanti chilometri vuoi percorrere?
                 </strong>
+                <input type="number" id="km">                  
             </div>
         
             <div class="row">
-                <strong class="text">
-                    Costo della Tratta:
-                </strong>
-                <strong class="text back" id="pfinale">
-                    
-                </strong> 
-                <button id="button">clicca</button>       
+                <button id="button">Generà Biglietto</button>       
+            </div>
+        
+        </div>
+
+        <div class="card">
+            <h1>DETTAGLI PASSEGGERO</h1>
+            <div class="row">
+                <div class="cont-name">
+                    <h3>NOME DEL PASSEGGERO</h3>
+                    <strong id="namek"></strong>
+                </div>
+                <div class="cont-tar">
+                    <strong class="text">
+                    Chilometri:
+                    </strong>
+                    <strong class="text back" id="kmk">
+                    </strong>  
+                </div>
+                <div class="cont-tar">
+                    <strong class="text">
+                        Anni:
+                    </strong>
+                    <strong class="text back" id="agek">
+                        
+                    </strong>
+                </div>
+                <div class="cont-tar">
+                    <strong class="text">
+                        Costo della Tratta:
+                    </strong>
+                    <strong class="text back" id="pfinale">
+                        
+                    </strong>     
+                </div>
+    
             </div>
         </div>
 
